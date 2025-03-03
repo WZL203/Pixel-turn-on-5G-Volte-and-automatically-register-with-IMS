@@ -1,0 +1,7 @@
+persist.dbg.volte_avail_ovr=1
+persist.dbg.ims_volte_enable=1
+persist.dbg.vt_avail_ovr=1
+persist.radio.volte_enabled=1
+persist.radio.nr.volte=1
+persist.radio.imsregistered=1
+persist.dbg.allow_ims_off=0
