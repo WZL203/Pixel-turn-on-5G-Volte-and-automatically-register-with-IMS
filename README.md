@@ -26,3 +26,7 @@
 4. 根据运营商代码执行不同的 VoLTE 配置逻辑: 如果运营商是中国移动、中国联通或中国电信之一,则设置一系列系统属性来启用 VoLTE,并重启 vendor.imsd 和 ril-daemon 服务,以应用配置。
 5. 如果运营商代码不在预定义的列表中,则跳过 VoLTE 配置,并记录未知运营商。
 6. 检查 IMS 注册状态,并记录是否成功注册。
+7. 将所有操作和重要信息记录到日志文件/data/adb/ modules/pixel-volte-kernelsu/log.txt中。方便查看脚本执行情况和排查问题。
+
+8. ### 日志📄在/data/adb/modules/wzl02/log.txt中
+9. 如模块功能未生效请查看日志输出💞
