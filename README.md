@@ -29,3 +29,4 @@
 7. 将所有操作和重要信息记录到日志文件/data/adb/ modules/pixel-volte-kernelsu/log.txt中。方便查看脚本执行情况和排查问题。
 
 8. ### 日志📄在/data/adb/modules/wzl02/log.txt中
+9. 如模块功能未生效请查看日志输出💞
