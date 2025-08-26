@@ -35,20 +35,17 @@ sleep 10
 echo "$(date): Waited 10 seconds for system stability" >> "$LOG_FILE"
 
 case "$OPERATOR" in
+    # 中国移动
+    "46000"|"46002"|"46007")
+        echo "$(date): Applying China Mobile VoLTE settings" >> "$LOG_FILE"
+        ;;
+    # 中国联通
     "46001")
         echo "$(date): Applying China Unicom VoLTE settings" >> "$LOG_FILE"
-        setprop persist.dbg.volte_avail_ovr 1
-        setprop persist.dbg.ims_volte_enable 1
-        setprop persist.dbg.vt_avail_ovr 1
-        setprop persist.radio.volte_enabled 1
-        setprop persist.dbg.allow_ims_off 0
-        echo "$(date): VoLTE properties set for China Unicom" >> "$LOG_FILE"
-        
-        setprop ctl.restart vendor.imsd || echo "$(date): Failed to restart IMS service" >> "$LOG_FILE"
-        echo "$(date): Restarted IMS service (vendor.imsd)" >> "$LOG_FILE"
-        
-        setprop ctl.restart ril-daemon || echo "$(date): Failed to restart ril-daemon" >> "$LOG_FILE"
-        echo "$(date): Restarted ril-daemon for China Unicom" >> "$LOG_FILE"
+        ;;
+    # 中国电信
+    "46003")
+        echo "$(date): Applying China Telecom VoLTE settings" >> "$LOG_FILE"
         ;;
     *)
         echo "$(date): Unknown operator ($OPERATOR), skipping VoLTE setup" >> "$LOG_FILE"
@@ -56,6 +53,21 @@ case "$OPERATOR" in
         exit 0
         ;;
 esac
+
+# 通用设置：开启VoLTE/IMS，禁用视频通话
+setprop persist.dbg.volte_avail_ovr 1
+setprop persist.dbg.ims_volte_enable 1
+setprop persist.dbg.vt_avail_ovr 0
+setprop persist.radio.volte_enabled 1
+setprop persist.dbg.allow_ims_off 0
+echo "$(date): VoLTE properties applied (Video Calling Disabled)" >> "$LOG_FILE"
+
+# 重启IMS和RIL
+setprop ctl.restart vendor.imsd || echo "$(date): Failed to restart IMS service" >> "$LOG_FILE"
+echo "$(date): Restarted IMS service (vendor.imsd)" >> "$LOG_FILE"
+
+setprop ctl.restart ril-daemon || echo "$(date): Failed to restart ril-daemon" >> "$LOG_FILE"
+echo "$(date): Restarted ril-daemon" >> "$LOG_FILE"
 
 SECONDS=0
 until [ -n "$(dumpsys telephony.registry | grep "mImsRegistered" | grep "true")" ] || [ $SECONDS -gt 60 ]; do
