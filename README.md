@@ -1,34 +1,47 @@
-🚫在此页面开启翻译插件会有文字混乱不准情况
-# 🌈为你的Pixel设备📱🍀
+# 🌈 为你的 Pixel 设备 📱🍀
 
-# 开启5G Volte✨
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
+[![中文](https://img.shields.io/badge/语言-中文-red.svg)](README.md)
 
-# 自动注册IMS✨
+🚫 **注意：在此页面开启翻译插件可能导致文字错乱！**
 
-# 拨打电话功能✨
+---
 
-# 强制关闭运营商视频通话✨
+## ✨ 功能特性
+- 开启 **5G VoLTE**
+- 自动注册 **IMS**
+- 拨打电话功能
+- 强制关闭运营商视频通话
 
-### 脱离依赖Shizuku服务的Pixel ims软件🤒
+---
 
-### 因为运行shizuku服务后 
-### 会在/data/local/tmp/shizuku/留下残留文件📄，
-### 导致luna隐藏软件检测到环境风险异常。
+## 🤒 脱离 Shizuku 服务
+- 运行 Shizuku 服务后会在 `/data/local/tmp/shizuku/` 留下残留文件 📄  
+  → 可能被某些检测环境风险的软件（如 Luna）识别异常。  
+- 本模块基于 **ROOT / KernelSU**，完全不依赖 Shizuku 服务 🤡  
+- 使用 KernelSU 模块修改更加方便快捷 👌
 
-### 可拥有ROOT权限 完全不必依赖Shizuku服务的🤡
+---
 
-### 所以使用Kernelsu模块修改更为方便快捷👌
+## 🍀 支持情况
+- 中国联通
+- 中国电信
+- 中国移动
 
-### 支持三网注册IMS🍀 中国联通 中国电信 中国移动
+---
 
-模块加载流程
-1. 等待系统完全启动
-2. 获取并清理当前 SIM卡的运营商代码。
-3. 随机延迟到最大60秒,确保 IMS 服务准备就绪。
-4. 根据运营商代码执行不同的 VoLTE 配置逻辑: 如果运营商是中国移动、中国联通或中国电信之一,则设置一系列系统属性来启用 VoLTE,并重启 vendor.imsd 和 ril-daemon 服务,以应用配置。
-5. 如果运营商代码不在预定义的列表中,则跳过 VoLTE 配置,并记录未知运营商。
-6. 检查 IMS 注册状态,并记录是否成功注册。
-7. 将所有操作和重要信息记录到日志文件/data/adb/ modules/pixel-volte-kernelsu/log.txt中。方便查看脚本执行情况和排查问题。
+## ⚙️ 模块加载流程
+1. 等待系统完全启动  
+2. 获取并清理当前 SIM 卡的运营商代码  
+3. 随机延迟到最大 60 秒，确保 IMS 服务准备就绪  
+4. 根据运营商代码执行不同的 VoLTE 配置逻辑  
+   - 如果是 **移动 / 联通 / 电信** → 设置系统属性，重启 `vendor.imsd` 和 `ril-daemon` 服务  
+   - 否则 → 跳过配置，并记录未知运营商  
+5. 检查 IMS 注册状态，并记录是否成功  
+6. 将所有操作和重要信息写入日志  
 
-8. ### 日志📄在/data/adb/modules/wzl02/log.txt中
-9. 如模块功能未生效请查看日志输出💞
+---
+
+## 📄 日志位置
+- `/data/adb/modules/wzl02/log.txt`  
+- 如果模块功能未生效，请查看日志输出 💞
