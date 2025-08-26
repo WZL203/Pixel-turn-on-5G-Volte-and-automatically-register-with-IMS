@@ -1,6 +1,6 @@
 persist.dbg.volte_avail_ovr=1       # 强制VoLTE可用
 persist.dbg.ims_volte_enable=1      # 启用IMS VoLTE
-persist.dbg.vt_avail_ovr=0          # 禁用视频通话 (原来是1)
+persist.dbg.vt_avail_ovr=0          # 禁用运营商视频通话 
 persist.radio.volte_enabled=1       # 打开VoLTE
 persist.radio.nr.volte=1            # NR (5G) 下的VoLTE
 persist.radio.imsregistered=1       # 标记IMS已注册
