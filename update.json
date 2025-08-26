@@ -1,6 +1,6 @@
 {
-  "latest_version": "v1.6",
+  "version": "v2.1",
   "versionCode": 2,
-  "download_url": "https://github.com/WZL203/pixel-volte/releases/download/v1.6/pixel-volte.zip",
-  "changelog": "Added Japanese, Korean, and French README support; improved IMS stability"
+  "zipUrl": "https://github.com/WZL203/Pixel-turn-on-5G-Volte-and-automatically-register-with-IMS/releases/download/v2.1/wzl02-v2.1.zip",
+  "changelog": "https://github.com/WZL203/Pixel-turn-on-5G-Volte-and-automatically-register-with-IMS/releases/tag/v2.1"
 }
