@@ -2,6 +2,9 @@
 
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
 [![中文](https://img.shields.io/badge/语言-中文-red.svg)](README.md)
+[![日本語](https://img.shields.io/badge/lang-日本語-green.svg)](README.ja.md)
+[![한국어](https://img.shields.io/badge/lang-한국어-orange.svg)](README.ko.md)
+[![Français](https://img.shields.io/badge/lang-Français-blue.svg)](README.fr.md)
 
 🚫 **注意：在此页面开启翻译插件可能导致文字错乱！**
 
