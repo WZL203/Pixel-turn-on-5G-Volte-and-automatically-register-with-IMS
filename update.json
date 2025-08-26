@@ -1,0 +1,6 @@
+{
+  "latest_version": "v1.6",
+  "versionCode": 2,
+  "download_url": "https://github.com/WZL203/pixel-volte/releases/download/v1.6/pixel-volte.zip",
+  "changelog": "Added Japanese, Korean, and French README support; improved IMS stability"
+}
