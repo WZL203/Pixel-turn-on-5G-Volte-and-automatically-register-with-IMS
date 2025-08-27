@@ -1,10 +1,10 @@
 # 🌈 For Your Pixel Device 📱🍀
 
-[![English](https://img.shields.io/badge/lang-English-blue.svg)](README.en.md)
+[![English](https://img.shields.io/badge/lang-English-blue.svg)](多国自述文件/README.en.md)
 [![中文](https://img.shields.io/badge/语言-中文-red.svg)](README.md)
-[![日本語](https://img.shields.io/badge/lang-日本語-green.svg)](README.ja.md)
-[![한국어](https://img.shields.io/badge/lang-한국어-orange.svg)](README.ko.md)
-[![Français](https://img.shields.io/badge/lang-Français-blue.svg)](README.fr.md)
+[![日本語](https://img.shields.io/badge/lang-日本語-green.svg)](多国自述文件/README.ja.md)
+[![한국어](https://img.shields.io/badge/lang-한국어-orange.svg)](多国自述文件/README.ko.md)
+[![Français](https://img.shields.io/badge/lang-Français-blue.svg)](多国自述文件/README.fr.md)
 
 🚫 **Note: Enabling browser translation plugins on this page may cause text disorder or inaccurate display!**
 
@@ -31,6 +31,7 @@
 - China Telecom
 - China Mobile
 - China Broadnet
+
 ---
 
 ## ⚙️ Module Workflow
@@ -48,4 +49,3 @@
 ## 📄 Log Location
 - `/data/adb/modules/wzl02/log.txt`  
 - If the module doesn’t take effect, please check the log output 💞
-
