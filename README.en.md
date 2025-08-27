@@ -30,7 +30,7 @@
 - China Unicom
 - China Telecom
 - China Mobile
-- china guangdian
+- China Broadnet 
 ---
 
 ## ⚙️ Module Workflow
@@ -48,3 +48,4 @@
 ## 📄 Log Location
 - `/data/adb/modules/wzl02/log.txt`  
 - If the module doesn’t take effect, please check the log output 💞
+
