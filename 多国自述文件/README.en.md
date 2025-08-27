@@ -30,7 +30,7 @@
 - China Unicom
 - China Telecom
 - China Mobile
-- china guangdian
+- China Broadnet
 ---
 
 ## ⚙️ Module Workflow
