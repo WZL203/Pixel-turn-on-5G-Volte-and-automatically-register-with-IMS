@@ -1,7 +1,6 @@
 {
-  "version": "4",
-  "versionCode": 4,
-  "zipUrl": "https://github.com/WZL203/Pixel-turn-on-5G-Volte-and-automatically-register-with-IMS/releases/download/3/wzl02.zip",
-  "changelog": "更新内容：\n- 合并5G SA模式设置\n- 增加中国广电支持\n- 优化IMS注册逻辑\n- 支持多运营商自动配置",
-  "minMagisk": "23000"
+  "version": "5",
+  "versionCode": 5,
+  "zipUrl": "https://github.com/WZL203/Pixel-turn-on-5G-Volte-and-automatically-register-with-IMS/releases/download/v5/wzl02-v5.zip",
+  "changelog": "https://raw.githubusercontent.com/WZL203/Pixel-turn-on-5G-Volte-and-automatically-register-with-IMS/main/CHANGELOG.md"
 }
